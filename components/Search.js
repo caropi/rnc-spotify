@@ -39,17 +39,40 @@
 *
 * */
 
-
 // perform steps (1) and (2) here
-
+import React, { Component } from "react";
+import { View, Text, TextInput, Stylesheet } from "react-native";
 
 // begin step (4) here
+
+export default class Search extends Component {
+  render() {
+    return (
+      <View>
+        <Text>Artist Search</Text>
+        <TextInput style={styles.input}></TextInput>
+      </View>
+    );
+  }
+}
 
 // begin step (5) here
 
 // begin step (6) here
 
 // begin step (7) here
-
+const styles = Stylesheet.create({
+  text: {},
+  input: {
+    borderWidth: 1,
+    borderColor: "grey",
+    borderRadius: 20,
+    height: 40,
+    padding: 10,
+    marginBottom: 10,
+    marginTop: 10
+  },
+  container: {}
+});
 
 // end step (4) with a closed curly brace
